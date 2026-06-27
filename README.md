@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on005448-blue)](https://doi.org/10.82901/nemar.on005448)
+
 Dataset description
 This dataset is part of a bigger dataset of intracranial EEG (iEEG)  called RESPect (Registry for Epilepsy Surgery Patients), a dataset recorded at the University Medical Center of Utrecht, the Netherlands.
 This dataset consists of 13 patients with long-term recordings (5 patients recorded with electrocorticography and 8 patients recorded with stereo-encephalography. For a detailed description see Jelsma S.B. et al 2024, Structural and effective brain connectivity in focal epilepsy.
