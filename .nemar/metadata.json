@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "STReEF",
+  "description": "STReEF is a long-term intracranial EEG dataset from 13 patients with focal epilepsy, comprising 5 electrocorticography and 8 stereo-encephalography recordings collected at the University Medical Center Utrecht. The dataset includes structural and functional neuroimaging data organized according to BIDS specification, designed to investigate structural and effective brain connectivity in focal epilepsy surgery candidates.",
+  "methods_description": "Long-term intracranial EEG recordings (electrocorticography and stereo-encephalography) from 13 patients with focal epilepsy. Data are organized in BIDS sessions with multiple runs indicating day and time point during the monitoring period. Task states are documented, including a specific 'SPESclin' task for clinical SPES protocol recordings.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -15,55 +17,6 @@
     "van Blooijs D.": {},
     "van Klink N.E.C.": {}
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds005448.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on005448",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005448",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    }
-  ],
-  "funding_references": [
-    {
-      "funder_name": "MING foundation"
-    },
-    {
-      "funder_name": "EpilepsieNL",
-      "award_number": "23-06"
-    },
-    {
-      "funder_name": "European Research Council",
-      "award_number": "803880"
-    }
-  ],
-  "modalities": [
-    "ieeg"
-  ],
-  "resource_type_specific": "iEEG Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".csv",
-    ".eeg",
-    ".json",
-    ".mat",
-    ".md",
-    ".tsv",
-    ".vhdr",
-    ".vmrk"
-  ],
-  "description": "STReEF is a long-term intracranial EEG dataset from 13 patients with focal epilepsy, comprising 5 electrocorticography and 8 stereo-encephalography recordings collected at the University Medical Center Utrecht. The dataset includes structural and functional brain connectivity measures derived from iEEG recordings organized according to BIDS specification, supporting research on epilepsy surgery outcomes and brain network organization in focal epilepsy.",
-  "methods_description": "Intracranial EEG recordings were obtained from 13 patients with focal epilepsy using two electrode types: electrocorticography (5 patients) and stereo-encephalography (8 patients). Long-term recordings were organized into BIDS sessions with multiple runs indicating day and time point during the monitoring period. Clinical SPES protocol was performed on selected recordings (task-SPESclin).",
   "keywords": [
     {
       "term": "intracranial EEG"
@@ -82,16 +35,55 @@
     },
     {
       "term": "epilepsy surgery"
-    },
-    {
-      "term": "BIDS"
-    },
-    {
-      "term": "long-term monitoring"
-    },
-    {
-      "term": "cortico-cortical evoked potentials"
     }
   ],
-  "source_hash": "5fcfb9638d5ad1da8637bbaaee4ad1daa3544d12c119dedfdff9fdbfe19098e7"
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/on005448",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005448",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005448.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "MING foundation"
+    },
+    {
+      "funder_name": "EpilepsieNL",
+      "award_number": "23-06"
+    },
+    {
+      "funder_name": "European Research Council",
+      "award_number": "803880"
+    }
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "modalities": [
+    "ieeg"
+  ],
+  "sizes": [
+    "48.0 GB (101 files)"
+  ],
+  "formats": [
+    ".csv",
+    ".eeg",
+    ".json",
+    ".mat",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".yml"
+  ],
+  "source_hash": "e26df61a4460e8093d5addee2c8441b001a1ead693c5b380e43a6fe282d98ec4"
 }
