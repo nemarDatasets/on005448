@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on005448",
-  "source": "openneuro",
-  "source_id": "ds005448",
+  "pipeline_stage": "enriched",
   "title": "STReEF",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Jelsma S.B.": {},
     "Zijlmans M.": {},
@@ -15,33 +15,83 @@
     "van Blooijs D.": {},
     "van Klink N.E.C.": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005448.v1.0.0",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005448",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005448",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "Brain Imaging Data Structure Specification v1.6.0",
-  "recording_modality": [
-    "ieeg"
-  ],
-  "datatypes": [
-    "ieeg"
   ],
   "funding_references": [
     {
-      "funder_name": "EpilepsieNL 23-06"
-    },
-    {
-      "funder_name": "ERC starting grant #803880"
-    },
-    {
       "funder_name": "MING foundation"
+    },
+    {
+      "funder_name": "EpilepsieNL",
+      "award_number": "23-06"
+    },
+    {
+      "funder_name": "European Research Council",
+      "award_number": "803880"
     }
   ],
-  "acknowledgements": "We thank the SEIN-UMCU RESPect database group (C.J.J. van Asch, L. van de Berg, S. Blok, M.D. Bourez, K.P.J. Braun, J.W. Dankbaar, C.H. Ferrier, T.A. Gebbink, P.H. Gosselaar, R. van Griethuysen, M.G.G. Hobbelink, F.W.A. Hoefnagels, N.E.C. van Klink, M.A. van ‘t Klooster, G.A.P. deKort, M.H.M. Mantione, A. Muhlebner, J.M. Ophorst, P.C. van Rijen, S.M.A. van der Salm, E.V. Schaft, M.M.J. van Schooneveld, H. Smeding, D. Sun, A. Velders, M.J.E. van Zandvoort, G.J.M. Zijlmans, E. Zuidhoek and J. Zwemmer) for their contributions and help in collecting the data."
+  "modalities": [
+    "ieeg"
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".csv",
+    ".eeg",
+    ".json",
+    ".mat",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "STReEF is a long-term intracranial EEG dataset from 13 patients with focal epilepsy, comprising 5 electrocorticography and 8 stereo-encephalography recordings collected at the University Medical Center Utrecht. The dataset includes structural and functional brain connectivity measures derived from iEEG recordings organized according to BIDS specification, supporting research on epilepsy surgery outcomes and brain network organization in focal epilepsy.",
+  "methods_description": "Intracranial EEG recordings were obtained from 13 patients with focal epilepsy using two electrode types: electrocorticography (5 patients) and stereo-encephalography (8 patients). Long-term recordings were organized into BIDS sessions with multiple runs indicating day and time point during the monitoring period. Clinical SPES protocol was performed on selected recordings (task-SPESclin).",
+  "keywords": [
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "electrocorticography"
+    },
+    {
+      "term": "stereo-encephalography"
+    },
+    {
+      "term": "focal epilepsy"
+    },
+    {
+      "term": "brain connectivity"
+    },
+    {
+      "term": "epilepsy surgery"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "long-term monitoring"
+    },
+    {
+      "term": "cortico-cortical evoked potentials"
+    }
+  ],
+  "source_hash": "5fcfb9638d5ad1da8637bbaaee4ad1daa3544d12c119dedfdff9fdbfe19098e7"
 }
