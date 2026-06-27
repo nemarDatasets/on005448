@@ -3,7 +3,7 @@
   "pipeline_stage": "validated",
   "title": "STReEF",
   "description": "STReEF is a long-term intracranial EEG dataset from 13 patients with focal epilepsy, comprising 5 electrocorticography and 8 stereo-encephalography recordings collected at the University Medical Center Utrecht. The dataset includes structural and functional neuroimaging data organized according to BIDS specification, designed to investigate structural and effective brain connectivity in focal epilepsy surgery candidates.",
-  "methods_description": "Long-term intracranial EEG recordings (electrocorticography and stereo-encephalography) from 13 patients with focal epilepsy. Data are organized in BIDS sessions with multiple runs indicating day and time point during the monitoring period. Task states are documented, including a specific 'SPESclin' task for clinical SPES protocol recordings.",
+  "methods_description": "Long-term intracranial EEG recordings (electrocorticography and stereo-encephalography) from 13 patients with focal epilepsy. Data are organized in BIDS sessions with multiple runs indicating day and time point during the monitoring period. Task descriptions include patient state during recording, with a specific 'SPESclin' task denoting clinical SPES protocol performance.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -35,6 +35,15 @@
     },
     {
       "term": "epilepsy surgery"
+    },
+    {
+      "term": "BIDS"
+    },
+    {
+      "term": "seizure monitoring"
+    },
+    {
+      "term": "RESPect registry"
     }
   ],
   "related_identifiers": [
