@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "STReEF",
-  "description": "This dataset contains long-term intracranial EEG (iEEG) recordings from 13 patients with focal epilepsy, part of the larger RESPect registry collected at the University Medical Center Utrecht. Recordings include electrocorticography (5 patients) and stereo-electroencephalography (8 patients), organized according to the BIDS specification with detailed session and run metadata reflecting monitoring periods and clinical protocols such as SPESclin. The dataset supports investigations into structural and effective brain connectivity in focal epilepsy.",
-  "methods_description": "Long-term iEEG recordings were obtained via electrocorticography or stereo-electroencephalography from patients undergoing epilepsy monitoring. Data were grouped into BIDS sessions corresponding to monitoring periods, with runs indicating day and start time of recording. Task labels denote patient state, including a specific 'SPESclin' task for clinical single pulse electrical stimulation protocols.",
+  "description": "STReEF is an intracranial EEG (iEEG) dataset of 13 patients with focal epilepsy, drawn from the RESPect (Registry for Epilepsy Surgery Patients) database at the University Medical Center Utrecht. Five patients were recorded with electrocorticography and eight with stereo-EEG during long-term monitoring. The recordings include clinical single pulse electrical stimulation (SPES) sessions and support studies of structural and effective brain connectivity in focal epilepsy.",
+  "methods_description": "Long-term iEEG recordings (ECoG in 5 patients, sEEG in 8 patients) are organized in BIDS. Data from one monitoring period are grouped in a session, with runs indicating the day and start time of recording. The task label describes the patient's state, and the task 'SPESclin' marks clinical SPES protocol performance.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -19,12 +19,7 @@
   },
   "keywords": [
     {
-      "term": "iEEG"
-    },
-    {
-      "term": "Epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+      "term": "intracranial EEG"
     },
     {
       "term": "Electrocorticography",
@@ -32,22 +27,18 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D000069280"
     },
     {
-      "term": "Stereoelectroencephalography"
+      "term": "stereo-EEG"
     },
     {
-      "term": "Brain Connectivity"
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
-      "term": "BIDS"
+      "term": "single pulse electrical stimulation"
     },
     {
-      "term": "SPES"
-    },
-    {
-      "term": "RESPect registry"
-    },
-    {
-      "term": "Single Pulse Electrical Stimulation"
+      "term": "brain connectivity"
     }
   ],
   "related_identifiers": [
@@ -76,8 +67,9 @@
       "award_number": "23-06"
     },
     {
-      "funder_name": "ERC",
-      "award_number": "803880"
+      "funder_name": "European Research Council",
+      "award_number": "803880",
+      "award_title": "ERC starting grant"
     }
   ],
   "resource_type_specific": "iEEG Dataset",
@@ -85,7 +77,7 @@
     "ieeg"
   ],
   "sizes": [
-    "48.0 GB (101 files)"
+    "44.73 GB (101 files)"
   ],
   "formats": [
     ".csv",
